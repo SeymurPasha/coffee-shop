@@ -10,7 +10,7 @@ body {
   align-items: center;
   margin: 0;
   box-sizing: border-box;
-  background: url("./white-1866105_1280.jpg") no-repeat;
+  background: url("../images/white-1866105_1280.jpg") no-repeat;
   background-size: cover;
   font-family: "Sansita", sans-serif;
   animation: page-transition 0.5s;
@@ -253,7 +253,7 @@ body {
 
 .cup {
   position: absolute;
-  background-image: url("./coffee.png");
+  background-image: url("../images/coffee.png");
   background-repeat: repeat-x;
   background-position: 0px 140px;
   top: 50%;

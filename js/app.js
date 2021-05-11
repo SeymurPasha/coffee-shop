@@ -32,7 +32,6 @@ const swiper = new Swiper('.swiper-container', {
 
       let bars = document.getElementById('hamburger')
       let navbar = document.querySelector('.navbar')
-      console.log(navbar);
       bars.addEventListener('click',  () => {
        navbar.classList.toggle('active')
       })
