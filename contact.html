@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8448752132.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="backr-color"></div>
+<div class="backr-color"></div>
+<div class="backr-color"></div>
+<div class="backr-color"></div>
+
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About Us</a>
+  <a href="./products.html">Products</a>
+  <a href="./contact.html">Contact Us</a>
+  </div>
+  <i id="hamburger" class="fas fa-bars fa-lg"></i>
+
+        <div class="contacts">
+        <div class="form-section">
+            <form action="" method="post">
+                <label for="email">Name</label>
+                <input name="Email" id="email" type="text">
+                <label for="email">Phone Number</label>
+                <input name="Email" id="email" type="tel">
+                <label for="email">Your Email</label>
+                <input name="Email" id="email" type="email">
+                <button type="submit">Send</button>
+              </form>
+        </div>
+        <div id="map" class="map">
+
+        </div>
+        </div>
+
+       
+<div class="cup">
+  <div class="cup-handle"></div>
+</div>
+
+        <div class="overlay"></div>
+
+</body>
+<script type="text/javascript">
+    var map = new ol.Map({
+      target: 'map',
+      layers: [
+        new ol.layer.Tile({
+          source: new ol.source.OSM()
+        })
+      ],
+      view: new ol.View({
+        center: ol.proj.fromLonLat([49.831473649801,40.36827589961555]),
+        zoom: 17
+      })
+    });
+
+    var iconStyle = new ol.style.Style({
+    image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+    anchor: [0.5, 40],
+    anchorXUnits: 'fraction',
+    anchorYUnits: 'pixels',
+    opacity: 1,
+    scale:0.3,
+    src: './4482957981557740362-128.png'
+  }))
+});
+
+    var layer = new ol.layer.Vector({
+     source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([49.831473649801,40.36827589961555 ]))
+             })
+         ]
+     }),
+     style:iconStyle
+ });
+
+
+ map.addLayer(layer);
+
+ 
+ 
+  </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./app.js"></script>
+</html>
