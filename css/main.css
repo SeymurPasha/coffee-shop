@@ -370,7 +370,6 @@ body {
 .about .image {
   padding: 1em;
   width: 50%;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .about .image {
