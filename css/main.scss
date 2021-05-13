@@ -7,7 +7,7 @@
 .backr-color {
 position: absolute;
 border-radius: 50%;
-filter: blur(100px);
+filter: blur(0px);
 z-index: -2;
 }
 
@@ -237,7 +237,7 @@ z-index: 3;
 }
 
 .hide {
-  display: none;
+  display: block;
 }
 
 @keyframes fill {
@@ -271,7 +271,6 @@ z-index: 3;
     @include flex(column,center,center);
     width: 40%;
     padding: 1em;
-    border: 1px solid blue;
     @include media("<=tablet") {
       width: 80%;
     }

@@ -13,20 +13,7 @@ body {
   background: url("../images/white-1866105_1280.jpg") no-repeat;
   background-size: cover;
   font-family: "Sansita", sans-serif;
-  -webkit-animation: page-transition 0.5s;
-          animation: page-transition 0.5s;
-}
-
-@-webkit-keyframes page-transition {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: page-transition 0.5s;
 }
 
 @keyframes page-transition {
@@ -43,8 +30,7 @@ body {
 .backr-color {
   position: absolute;
   border-radius: 50%;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  filter: blur(0px);
   z-index: -2;
 }
 
@@ -128,8 +114,7 @@ body {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     opacity: 0.7;
     z-index: 2;
-    -webkit-animation: page-transition 0.3s;
-            animation: page-transition 0.3s;
+    animation: page-transition 0.3s;
   }
   .active a {
     font-size: 1.3em;
@@ -178,8 +163,7 @@ body {
   cursor: pointer;
 }
 .main-content .section-1 .item-big:hover {
-  -webkit-animation: rotate 1s ease-in;
-          animation: rotate 1s ease-in;
+  animation: rotate 1s ease-in;
 }
 .main-content .section-1 .item-big img {
   width: 100%;
@@ -225,8 +209,7 @@ body {
   cursor: pointer;
 }
 .main-content .section-2 .items .item:hover {
-  -webkit-animation: rotate 1s ease-in;
-          animation: rotate 1s ease-in;
+  animation: rotate 1s ease-in;
 }
 .main-content .section-2 .items .item img {
   width: 100%;
@@ -246,15 +229,6 @@ body {
   }
   .main-content .section-2 .items .item {
     height: 60%;
-  }
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(180deg);
   }
 }
 
@@ -288,8 +262,7 @@ body {
   height: 35px;
   border-radius: 0 0 1em 1em;
   border: 3px solid #000000;
-  -webkit-animation: fill 2.5s 0s infinite;
-          animation: fill 2.5s 0s infinite;
+  animation: fill 2.5s 0s infinite;
   z-index: 3;
 }
 @media (max-width: 768px) {
@@ -319,24 +292,6 @@ body {
 
 .hide {
   display: none;
-}
-
-@-webkit-keyframes fill {
-  0% {
-    background-position: 0px 140px;
-  }
-  20% {
-    background-position: -100px 20px;
-  }
-  40% {
-    background-position: -300px 5px;
-  }
-  80% {
-    background-position: -500px -15px;
-  }
-  100% {
-    background-position: -600px -25px;
-  }
 }
 
 @keyframes fill {
@@ -388,7 +343,6 @@ body {
   justify-content: center;
   width: 40%;
   padding: 1em;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .about .story {
@@ -494,4 +448,4 @@ body {
   .contacts .map {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=main.css.map */
