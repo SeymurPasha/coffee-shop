@@ -30,7 +30,7 @@ body {
 .backr-color {
   position: absolute;
   border-radius: 50%;
-  filter: blur(0px);
+  filter: blur(50px);
   z-index: -2;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .backr-color:nth-child(3) {
-  top: 65%;
-  left: 45%;
+  top: 73%;
+  left: 35%;
   background-color: #BB6BD9;
   width: 15%;
   height: 25%;
@@ -291,7 +291,7 @@ body {
 }
 
 .hide {
-  display: block;
+  display: none;
 }
 
 @keyframes fill {
