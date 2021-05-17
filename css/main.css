@@ -160,19 +160,9 @@ body {
   height: 40%;
   width: 100%;
 }
-@media (max-width: 768px) {
-  .main-content .section-2 .header {
-    font-size: smaller;
-  }
-}
 .main-content .section-2 .header span {
   color: #e2252b;
   font-weight: 600;
-}
-@media (max-width: 768px) {
-  .main-content .section-2 .header span {
-    font-size: smaller;
-  }
 }
 .main-content .section-2 .items {
   display: flex;
@@ -199,7 +189,7 @@ body {
 @media (max-width: 768px) {
   .main-content .section-2 {
     height: 100%;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
