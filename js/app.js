@@ -28,10 +28,3 @@ const swiper = new Swiper('.swiper-container', {
           el: '.swiper-scrollbar',
         },
       });
-
-
-      let bars = document.getElementById('hamburger')
-      let navbar = document.querySelector('.navbar')
-      bars.addEventListener('click',  () => {
-       navbar.classList.toggle('active')
-      })

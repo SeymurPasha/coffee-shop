@@ -33,46 +33,17 @@ z-index: -2;
     }
   
     @include media("<=tablet") {
-      display: none;
+      @include flex(row, center, center);
+      width: 100%;
+      background-color: gray;
+      a {
+        color: white;
+      }
     }    
 
 }
 
 
-#hamburger {
-    display: none;
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    z-index: 2;
-    cursor: pointer;
-  @include media("<=tablet") {
-   
-    @include flex(row, center,center);
-    cursor: pointer;
-  }
-}
-
-.active {
-
-  @include media("<=tablet") {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-   @include flex(column,center, center);
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    opacity: .7;
-    z-index: 2;
-    animation: page-transition .3s;
-  
-    a {
-      font-size: 1.3em;
-      color: black;
-    }
-  
-  }
-
-}
 
 @keyframes page-transition {
   0% {opacity: 0;};
@@ -112,11 +83,11 @@ z-index: -2;
     }
 
     @include media("<=tablet") {
-      width: 90%;
+      width: 100%;
       height: 50%;
       .item-big {
         height: 100%;
-        width: 100%;
+        width: 90%;
       }
     }
   
