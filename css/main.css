@@ -179,7 +179,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
   height: 60%;
   width: 99%;
 }
