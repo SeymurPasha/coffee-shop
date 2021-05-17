@@ -115,7 +115,7 @@ z-index: -2;
     }
     .items {
     @include flex(row, center, center);
-    border: 1px solid blue;
+  
     height: 60%;
     width: 99%;
 
