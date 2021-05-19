@@ -114,16 +114,16 @@ z-index: -2;
     }
     .items {
     @include flex(row, center, center);
-  
     height: 60%;
     width: 99%;
-
+    
     
     .item {
-     width: 25%;
+      width: 25%;
       height: 90%;
       padding: .3em;
       cursor: pointer;
+      
       &:hover {
        animation: rotate 1s ease-in;
       }
@@ -132,12 +132,15 @@ z-index: -2;
       height: 100%;
       border-radius: 1em;
       }
+      @include media("<=tablet") {
+        height: 85%;
+      }
     }
     }
 
     @include media("<=tablet") {
       height: 100%;
-      width: 90%;
+      width: 95%;
       justify-content: center;
       align-items: center;
     }
