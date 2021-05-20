@@ -10,7 +10,7 @@ body {
   align-items: center;
   margin: 0;
   box-sizing: border-box;
-  background: url("../images/white-1866105_1280.jpg") no-repeat;
+  background: url("../images/white-1866105_1280.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: "Sansita", sans-serif;
   animation: page-transition 0.5s;
@@ -209,7 +209,7 @@ body {
   }
 }
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
