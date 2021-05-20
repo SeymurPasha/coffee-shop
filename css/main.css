@@ -101,10 +101,7 @@ body {
   }
 }
 .main-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: none;
   height: 80%;
   width: 95%;
 }
@@ -231,7 +228,7 @@ body {
   border-radius: 0 0 1em 1em;
   border: 3px solid #000000;
   animation: fill 2.5s 0s infinite;
-  z-index: 3;
+  z-index: 100;
 }
 @media (max-width: 768px) {
   .cup {
@@ -280,7 +277,7 @@ body {
   }
 }
 .about {
-  display: flex;
+  display: none;
 }
 @media (max-width: 768px) {
   .about {
@@ -322,6 +319,7 @@ body {
 }
 
 .swiper-container {
+  display: none;
   margin: auto;
   border-radius: 1rem;
   width: 45%;
@@ -340,7 +338,7 @@ body {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   width: 90%;
   height: 80%;
 }
@@ -416,4 +414,11 @@ body {
   .contacts .map {
     width: 100%;
   }
+}
+
+.show {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -2,9 +2,11 @@
 window.addEventListener('load', () => {
     
 document.querySelector('.cup').classList.add('hide') 
-document.querySelector('.cup-handle').classList.add('hide') 
-    
-})
+document.querySelector('.cup-handle').classList.add('hide')
+
+  })
+
+
 
 
 const swiper = new Swiper('.swiper-container', {

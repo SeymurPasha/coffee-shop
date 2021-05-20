@@ -50,11 +50,12 @@ z-index: -2;
   100% {opacity: .7;};
 }
 
+
+
 .main-content {
- @include flex(row,center,center);
+  display: none;
   height: 80%;
   width: 95%;
-
 
   @include media("<=tablet") {
     @include flex(column-reverse, center,center);
@@ -176,7 +177,7 @@ height: 35px;
 border-radius: 0 0 1em 1em ;
 border: 3px solid #000000;
 animation: fill 2.5s 0s infinite;
-z-index: 3;
+z-index: 100;
 
 @include media("<=tablet") {
  width: 25px;
@@ -214,7 +215,7 @@ z-index: 3;
 }
 
 .about {
-    display: flex;
+    display: none;
     @include media("<=tablet") {
     @include flex(column, center,center);
   }
@@ -246,6 +247,7 @@ z-index: 3;
 }
 
 .swiper-container {
+  display: none;
   margin: auto;
   border-radius: 1rem;
   width: 45%;
@@ -267,7 +269,7 @@ z-index: 3;
 }
 
 .contacts {
-  display: flex;
+  display: none;
   width: 90%;
   height: 80%;
  
@@ -344,3 +346,6 @@ z-index: 3;
 }
 
 
+.show {
+  @include flex(row,center,center);
+}
