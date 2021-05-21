@@ -101,7 +101,10 @@ body {
   }
 }
 .main-content {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 80%;
   width: 95%;
 }
@@ -276,9 +279,6 @@ body {
     background-position: -600px -25px;
   }
 }
-.about {
-  display: none;
-}
 @media (max-width: 768px) {
   .about {
     display: flex;
@@ -319,7 +319,6 @@ body {
 }
 
 .swiper-container {
-  display: none;
   margin: auto;
   border-radius: 1rem;
   width: 45%;
@@ -338,7 +337,6 @@ body {
 }
 
 .contacts {
-  display: none;
   width: 90%;
   height: 80%;
 }
@@ -414,11 +412,4 @@ body {
   .contacts .map {
     width: 100%;
   }
-}
-
-.show {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -53,7 +53,7 @@ z-index: -2;
 
 
 .main-content {
-  display: none;
+  @include flex(row,center,center);
   height: 80%;
   width: 95%;
 
@@ -215,7 +215,6 @@ z-index: 100;
 }
 
 .about {
-    display: none;
     @include media("<=tablet") {
     @include flex(column, center,center);
   }
@@ -247,7 +246,7 @@ z-index: 100;
 }
 
 .swiper-container {
-  display: none;
+  
   margin: auto;
   border-radius: 1rem;
   width: 45%;
@@ -269,7 +268,7 @@ z-index: 100;
 }
 
 .contacts {
-  display: none;
+ 
   width: 90%;
   height: 80%;
  
@@ -345,7 +344,3 @@ z-index: 100;
   }
 }
 
-
-.show {
-  @include flex(row,center,center);
-}
