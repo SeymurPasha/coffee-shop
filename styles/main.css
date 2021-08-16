@@ -431,6 +431,7 @@ body {
 }
 @media (max-width: 768px) {
   .contacts {
+    width: 95%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -441,6 +442,5 @@ body {
   }
   .contacts .map {
     width: 100%;
-    height: 110;
   }
 }/*# sourceMappingURL=main.css.map */

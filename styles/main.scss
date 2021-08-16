@@ -327,13 +327,13 @@ z-index: 100;
 
   }
   @include media("<=tablet") {
+    width: 95%;
   @include flex(column-reverse, center,center);
   .form-section {
     width: 90%;
   }
   .map {
     width: 100%;
-    height: 110%;
   }
   }
 }
