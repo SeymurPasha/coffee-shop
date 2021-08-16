@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
 $backr-colors: #56CCF2,#006400,#BB6BD9,#F2994A;
 $top: 5%, 65%, 73%, 5%;
@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     background:url('../images/white-1866105_1280.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Playfair Display', serif;
     animation: page-transition .5s;
 }
 
